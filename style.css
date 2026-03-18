@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Login Page Styles */
+.login-container {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-container h2 { margin-bottom: 20px; color: #1a73e8; }
+.form-group { margin-bottom: 15px; }
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.primary-btn { background-color: #1a73e8; color: white; width: 100%; margin-bottom: 10px;}
+.primary-btn:hover { background-color: #1557b0; }
+.secondary-btn { background-color: #e0e0e0; color: #333; width: 100%; }
+.secondary-btn:hover { background-color: #ccc; }
+.success-btn { background-color: #34a853; color: white; }
+.danger-btn { background-color: #ea4335; color: white; }
+
+.error-msg { color: #ea4335; margin-bottom: 10px; font-size: 14px;}
+
+/* Library Page Styles */
+.navbar {
+    background-color: #1a73e8;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+.card h3 { margin-bottom: 15px; border-bottom: 2px solid #f0f2f5; padding-bottom: 10px;}
+.form-row { display: flex; gap: 10px; }
+.form-row input { flex: 1; }
+
+.book-item {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fafafa;
+}
+.book-title { font-weight: bold; font-size: 18px; color: #1a73e8;}
+.book-category { font-size: 14px; color: #666; margin-top: 5px;}
