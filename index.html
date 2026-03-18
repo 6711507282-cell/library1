@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เข้าสู่ระบบ - ห้องสมุดมหาวิทยาลัย</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>📚 ระบบห้องสมุดมหาวิทยาลัย</h2>
+        <div class="form-group">
+            <input type="email" id="email" placeholder="อีเมล (เช่น student@uni.ac.th)">
+        </div>
+        <div class="form-group">
+            <input type="password" id="password" placeholder="รหัสผ่าน">
+        </div>
+        <p id="errorMessage" class="error-msg"></p>
+        <button id="loginBtn" class="primary-btn">เข้าสู่ระบบ</button>
+        <button id="registerBtn" class="secondary-btn">สมัครสมาชิก</button>
+    </div>
+
+    <script type="module" src="auth.js"></script>
+</body>
+</html>
