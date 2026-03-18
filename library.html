@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ค้นหาหนังสือ - ห้องสมุดมหาวิทยาลัย</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>📚 ห้องสมุดมหาวิทยาลัย</h2>
+        <div class="user-menu">
+            <span id="userEmail"></span>
+            <button id="logoutBtn" class="danger-btn">ออกจากระบบ</button>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="card add-section">
+            <h3>➕ เพิ่มหนังสือใหม่เข้าระบบ</h3>
+            <div class="form-row">
+                <input type="text" id="bookTitle" placeholder="ชื่อหนังสือ (เช่น ภาษาไทยเบื้องต้น)">
+                <input type="text" id="bookCategory" placeholder="หมวดหมู่ (เช่น ภาษาศาสตร์)">
+                <button id="addBookBtn" class="success-btn">บันทึกข้อมูล</button>
+            </div>
+            <p id="addMessage"></p>
+        </div>
+
+        <div class="card search-section">
+            <h3>🔍 ค้นหาหนังสือ</h3>
+            <div class="form-row">
+                <input type="text" id="searchInput" placeholder="พิมพ์ชื่อหนังสือที่ต้องการค้นหา...">
+                <button id="searchBtn" class="primary-btn">ค้นหา</button>
+            </div>
+            <button id="showAllBtn" class="secondary-btn" style="margin-top: 10px;">แสดงหนังสือทั้งหมด</button>
+        </div>
+
+        <div class="card results-section">
+            <h3>ผลการค้นหา</h3>
+            <div id="bookList" class="book-list">
+                </div>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
